@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação</title>
+
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+
+        h1{
+            font: normal 25pt Times;
+        }
+
+        input{
+            font: normal 15pt Times;
+        }
+
+        div{
+            font: normal 20pt Times; 
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Sistema de idade para votação</h1>
+    <input type="number" name="txtidade" id="txtidade">
+    <input type="button" value="Averiguar" onclick="situação()">
+    <div id="resposta"><p><strong>Situação:</strong></p></div>
+
+    <script>
+        function situação() {
+        var ida = document.getElementById("txtidade");
+        var idade = Number(ida.value); 
+        var resp = document.getElementById("resposta");
+        resp.innerHTML = `<p>Você tem <strong>${idade}</strong> anos.</p>`
+
+        if (idade < 16){
+            resp.innerHTML += "<p>Você não vota!</p>"
+        } else if (idade < 18 || idade > 65){
+            resp.innerHTML += "<p>Você vota de maneira opcional!</p>"
+        } else{
+            resp.innerHTML += "<p>Você tem obrigação de votar!</p>"
+        }
+    }   
+    </script>
+
+</body>
+</html>

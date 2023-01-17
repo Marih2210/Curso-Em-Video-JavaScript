@@ -1,0 +1,52 @@
+body{
+    background: rgb(0, 0, 0);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.404);
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+div{
+    text-align: center;
+}
+
+#lista{
+    width: 250px;
+    margin-top: 25px;
+}
+
+#bf{
+    margin-top: 5px;
+}
+
+#lista{
+    text-align: left;
+}
+
+#par{
+    margin-top: 0px;
+    margin-bottom: -20px;
+    margin-left: -200px;
+}
+
+#resultado{
+    text-align: left;
+}

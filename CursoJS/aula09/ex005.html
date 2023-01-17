@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Parte 1</title>
+
+    <style>
+
+        body{ 
+            background-color: black;
+            color: white;
+            font: 16pt Arial;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Iniciando Estudos com DOM!</h1>
+    <p>Aqui Vai o Resultado.</p>
+    <p>Aprenderndo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div class = "msg">Clique em mim!</div><br>
+
+    <script>
+         
+         var corpo = document.body;
+         var p1 = document.getElementsByTagName('p')[0]; /* pega um objeto pela tag, como temos 2 iguais, para 
+         selecionar o 1º após () colocamos [0], que representa o primeiro objeto encontrado com essa tag.*/
+         //var d = document.getElementById('msg') // pega o elemento pelo ID.
+         //var d = document.getElementsByName(msg)[0]; // pega o elento pelo Nome.
+         //var d = document.getElementsByClassName(msg)[0]; // pega o elento pela Classe.
+         var d = document.querySelector("div.msg"); //pega o elemento#id --> ID usa #, Classe usa .
+
+        // document.write('Está escrito assim: ' + p1.innerText); //innerText --> pega o texto sem formatação em p1.
+        // p1.style.color= 'red'; // muda a cor do p1.
+        // corpo.style.background = 'black'
+        // document.write(p1.innerHTML)[1]; // Pega o comando inteiro do parágrafo com as formatações em p1.
+        //d.style.color = "red"
+        //d.innerText = "Clique nesse texto!" // podemos utilizar InnerText para mudar o texto de uma variável.
+        d.style.color = 'red'
+
+
+    </script>
+
+</body>
+
+</html>

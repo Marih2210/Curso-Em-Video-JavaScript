@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> <!--Parte de configuração-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title> <!--Nome da aba da página-->
+    <style>
+        body{
+            background-color: rgb(185, 93, 93); /* Fundo */
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        h1{
+            color: rgb(245, 176, 91);
+        }
+
+    </style>
+
+</head>
+
+<body> <!--Parte que aparece no site-->
+
+    <h1>Olá, mundo!</h1> <!--Determinar um título de nível 1-->
+    <p>Já me livrei da maldição!</p>
+
+    <script>
+
+        // Comentário Para Uma Linha
+        /* Comentário Para Mais de Uma Linha */ 
+
+        var n1 = Number(window.prompt("Digite o 1º número: ")); /* window.prompt recebe String e utilizamos Number() 
+        para converter para número.*/
+        var n2 = Number(window.prompt("Digite o 2º número: "));
+        var soma = n1 + n2; // É necessário Converter essas variáveis para number, já que estão em string.
+        window.alert(`A soma entre os números ${n1} e ${n2} é igual à: ${soma}`); 
+
+        // + = serve de concatenação (junção), para concatenação usar o formato --> (string + string).
+        // + = serve para adição, para adição usar o formato --> (number + number).
+
+    </script>
+
+</body>
+</html>
